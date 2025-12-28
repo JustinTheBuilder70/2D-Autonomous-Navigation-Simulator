@@ -1,0 +1,4 @@
+./run.out -visual
+./run.out -testhuman
+./run.out -human
+./run.out -testvisual
