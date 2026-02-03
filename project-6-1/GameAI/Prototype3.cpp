@@ -100,7 +100,7 @@ struct Haf{
       }
     }
   }
-
+/*
   void test() {
     auto &grid = state.vision;
     std::pair<int, int> player = {-1, -1};
@@ -160,7 +160,7 @@ struct Haf{
 
     return true;
   }
-
+*/
 
   std::vector<std::pair<int, int>> frontier() {
     auto [py, px] = pos;
@@ -218,7 +218,6 @@ struct Haf{
   int move(GameState &state) {
     updateState(state);
     updateKnowledge();
-    reveal();
     walk();
 
     auto [py, px] = pos;
